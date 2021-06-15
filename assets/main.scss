@@ -306,6 +306,8 @@ h3 {
 // Comments
 
 .wp-block-post-comments {
+	margin-top: calc( #{$spacing-vertical} * 3 );
+	
 	.comment-respond {
 		margin-top: calc( #{$spacing-vertical} * 3 );
 	}
