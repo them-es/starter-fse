@@ -1,0 +1,14 @@
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.has-text-align-right {
+	text-align: end;
+}
+
+/* Header */
+
+header.site-header .wp-block-search {
+	margin: 0 auto 0 0 !important;
+}

@@ -45,6 +45,10 @@ function themes_starter_register_styles() {
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $theme_version );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/dist/main.css', array(), $theme_version, 'all' ); // main.scss: Compiled Framework source + custom styles.
 
+	if ( is_rtl() ) {
+		wp_enqueue_style( 'rtl', get_template_directory_uri() . '/assets/dist/rtl.css', array(), $theme_version, 'all' );
+	}
+
 	// 2. Scripts.
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/dist/main.bundle.js', array(), $theme_version, true );
 }
