@@ -126,7 +126,6 @@ header {
 
 		.wp-block-navigation {
 			margin-top: calc( #{$spacing-vertical} / 2 );
-			margin-bottom: calc( #{$spacing-vertical} / 2 );
 		}
 	}
 }
@@ -436,9 +435,14 @@ h3 {
 				padding-left: $spacing-horizontal;
 			}
 
+			.wp-block-navigation {
+				margin: 0;
+			}
+
 			.wp-block-search {
 				width: auto;
 				max-width: 100%;
+				margin-top: calc( #{$spacing-vertical} / 2 );
 				padding: 0 $spacing-horizontal;
 			}
 		}
