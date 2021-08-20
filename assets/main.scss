@@ -30,12 +30,6 @@ $spacing-horizontal: var(--wp--custom--spacing--horizontal) !default;
  * General
  */
 
-body {
-	font-family: var(--wp--preset--font-family--sans-serif);
-	color: $black;
-	margin: 0;
-}
-
 img {
 	vertical-align: middle;
 }
@@ -66,6 +60,10 @@ h1,
  */
 
 body {
+	font-family: var(--wp--preset--font-family--sans-serif);
+	color: $black;
+	margin: 0;
+
 	&.author {
 		.wp-block-post-author {
 			align-items: center;
@@ -277,6 +275,14 @@ h3 {
 				content: '\00A0\00BB'; // »
 			}
 		}
+	}
+}
+
+// Featured image
+
+.wp-block-post-featured-image {
+	img {
+		width: 100%;
 	}
 }
 

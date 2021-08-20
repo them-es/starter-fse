@@ -10,8 +10,6 @@ if ( ! function_exists( 'themes_starter_theme_support' ) ) {
 		add_theme_support( 'post-thumbnails' );
 		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
-		// Add support for full and wide alignment.
-		add_theme_support( 'align-wide' );
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 		// Add support for padding controls.

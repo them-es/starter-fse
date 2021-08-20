@@ -152,7 +152,7 @@
 			"customWidth": true
 		},
 		"custom": {
-			"font-primary": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+			"font-primary": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Liberation Sans\", sans-serif",
 			"line-height": {
 				"body": 1.7,
 				"heading": 1.3,
