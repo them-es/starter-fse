@@ -111,7 +111,7 @@ header {
 
 		.wp-block-site-logo {
 			img {
-				min-width: 80px;
+				width: 85px;
 				height: auto;
 			}
 		}
@@ -132,9 +132,7 @@ header {
 /* Main */
 
 main {
-	&.alignfull {
-		margin: 0 !important;
-	}
+	
 }
 
 
@@ -191,6 +189,10 @@ h3 {
 			margin-left: calc( #{$spacing-horizontal} * -1 );
 			max-width: none;
 			width: auto;
+
+			.alignfull {
+				margin: 0;
+			}
 		}
 	}
 }
