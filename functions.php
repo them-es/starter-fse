@@ -4,23 +4,13 @@ if ( ! function_exists( 'themes_starter_theme_support' ) ) {
 		// Make theme available for translation: Translations can be filed in the /languages/ directory.
 		load_theme_textdomain( 'my-theme', get_template_directory() . '/languages' );
 
-		// Add default posts and comments RSS feed links to <head>.
-		add_theme_support( 'automatic-feed-links' );
-		// Add support for post thumbnails and featured images.
-		add_theme_support( 'post-thumbnails' );
 		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
-		// Add support for responsive embedded content.
-		add_theme_support( 'responsive-embeds' );
-		// Add support for padding controls.
-		add_theme_support( 'custom-spacing' );
-		// Add support for Editor styles.
-		add_theme_support( 'editor-styles' );
 
 		// Enqueue Editor styles.
 		add_editor_style(
 			array(
-				'./assets/dist/main.css',
+				//'./assets/dist/main.css',
 				'./style-editor.css',
 			)
 		);
@@ -36,7 +26,7 @@ if ( ! function_exists( 'themes_starter_theme_support' ) ) {
 /**
  * Register and Enqueue Styles.
  */
-function themes_starter_register_styles() {
+function themes_starter_load_scripts() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	// 1. Styles
@@ -50,4 +40,4 @@ function themes_starter_register_styles() {
 	// 2. Scripts.
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/dist/main.bundle.js', array(), $theme_version, true );
 }
-add_action( 'wp_enqueue_scripts', 'themes_starter_register_styles' );
+add_action( 'wp_enqueue_scripts', 'themes_starter_load_scripts' );

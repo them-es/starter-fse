@@ -1,23 +1,21 @@
-<!-- wp:columns {"align":"full"} -->
-<div class="wp-block-columns alignfull">
-	<!-- wp:column {"width":"23%"} -->
-	<div class="wp-block-column" style="flex-basis:23%">
-		<!-- wp:site-logo {"width":85,"className":"is-style-default"} /-->
-
-		<!-- wp:site-tagline {"fontSize":"extra-small"} /-->
-	</div>
-	<!-- /wp:column -->
-	<!-- wp:column {"width":"77%"} -->
-	<div class="wp-block-column" style="flex-basis:77%">
-		<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"right","style":{"border":{"radius":0}}} /-->
-
-		<!-- wp:navigation {"orientation":"horizontal","itemsJustification":"right","isResponsive":true} -->
-		<!-- wp:navigation-link {"label":"Home","url":"#"} /-->
-		<!-- wp:navigation-link {"label":"About","url":"#"} /-->
-		<!-- wp:navigation-link {"label":"Blog","url":"#"} /-->
-		<!-- wp:navigation-link {"label":"Contact","url":"#"} /-->
-		<!-- /wp:navigation -->
-	</div>
-	<!-- /wp:column -->
+<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide">
+	<!-- wp:group {"layout":{"type":"flex"}} -->
+	<div class="wp-block-group">
+		<!-- wp:site-logo {"width":85} /-->
+		<!-- wp:site-tagline {"fontSize":"extra-small"} /--></div>
+	<!-- /wp:group -->
+	
+	<!-- wp:navigation {"itemsJustification":"right","isResponsive":true} -->
+		<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+		
+		<!-- wp:navigation-link {"label":"Home","type":"page","id":164,"url":"http://themes.localhost/starter-fse/","kind":"post-type","isTopLevelLink":true} /-->
+		
+		<!-- wp:navigation-link {"label":"About them.es","type":"page","id":110,"url":"http://themes.localhost/starter-fse/about/","kind":"post-type","isTopLevelLink":true} /-->
+		
+		<!-- wp:navigation-link {"label":"Blog","type":"page","id":13,"url":"http://themes.localhost/starter-fse/blog/","kind":"post-type","isTopLevelLink":true} /-->
+		
+		<!-- wp:navigation-link {"label":"Contact","type":"page","id":210,"url":"http://themes.localhost/starter-fse/contact/","kind":"post-type","isTopLevelLink":true} /-->
+	<!-- /wp:navigation -->
 </div>
-<!-- /wp:columns -->
+<!-- /wp:group -->
