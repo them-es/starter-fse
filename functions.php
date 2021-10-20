@@ -6,6 +6,8 @@ if ( ! function_exists( 'themes_starter_theme_support' ) ) {
 
 		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
+		// Add support for responsive embedded content.
+		add_theme_support( 'responsive-embeds' );
 
 		// Enqueue Editor styles.
 		add_editor_style(
