@@ -127,10 +127,11 @@ header {
 /* Main */
 
 main {
-	&.alignfull {
-		> .wp-block-post-title,
-		> .wp-block-group {
-			padding: 0 $spacing-horizontal;
+	.wp-block-post-content {
+		.wp-block-group {
+			&.alignfull {
+				padding: 0 $spacing-horizontal;
+			}
 		}
 	}
 }

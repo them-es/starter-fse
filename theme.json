@@ -1,5 +1,19 @@
 {
 	"version": 1,
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"area": "footer"
+		},
+		{
+			"name": "query",
+			"area": "query"
+		}
+	],
 	"settings": {
 		"color": {
 			"gradients": [
@@ -84,6 +98,7 @@
 		},
 		"spacing": {
 			"blockGap": true,
+			"customMargin": true,
 			"customPadding": true,
 			"units": [
 				"%",

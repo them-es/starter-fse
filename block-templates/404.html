@@ -1,20 +1,16 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","align":"full","className":"site-header","layout":{"inherit":true}} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main"} -->
+<!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
 <main class="wp-block-group">
-	<!-- wp:group {"layout":{"inherit":true}} -->
-	<div class="wp-block-group">
-		<!-- wp:heading {"level":1} -->
-		<h1>404</h1>
-		<!-- /wp:heading -->
+	<!-- wp:heading {"level":1,"align":"wide"} -->
+	<h1 class="alignwide">404</h1>
+	<!-- /wp:heading -->
 
-		<!-- wp:paragraph -->
-		<p>It looks like nothing was found at this location. Maybe try a search?</p>
-		<!-- /wp:paragraph -->
+	<!-- wp:paragraph -->
+	<p>It looks like nothing was found at this location. Maybe try a search?</p>
+	<!-- /wp:paragraph -->
 
-		<!-- wp:search {"label":"Search...","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true} /-->
-	</div>
-	<!-- /wp:group -->
+	<!-- wp:search {"label":"Search...","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true} /-->
 
 	<!-- wp:spacer -->
 	<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -22,4 +18,4 @@
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","align":"full","className":"site-footer","layout":{"inherit":true}} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->
