@@ -102,13 +102,6 @@ header {
 	&.site-header {
 		padding: $spacing-vertical $spacing-horizontal;
 
-		.wp-block-site-logo {
-			img {
-				width: 85px;
-				height: auto;
-			}
-		}
-
 		.wp-block-navigation {
 			&.items-justified-right {
 				overflow: hidden;
@@ -380,10 +373,6 @@ ul.wp-block-post-template {
 
 	header {
 		&.site-header {
-			.wp-block-site-logo {
-				padding-left: $spacing-horizontal;
-			}
-
 			.wp-block-navigation {
 				&.items-justified-right {
 					.wp-block-navigation__container {
@@ -401,8 +390,14 @@ ul.wp-block-post-template {
 
 	footer {
 		&.site-footer {
+			.wp-block-site-title,
 			[class*="has-text-align-"] {
 				text-align: center;
+			}
+
+			.wp-block-site-title {
+				width: 100%;
+				margin-bottom: $spacing-vertical;
 			}
 
 			.wp-block-navigation {

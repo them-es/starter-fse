@@ -1,16 +1,50 @@
 {
 	"version": 1,
+	"customTemplates": [
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		},
+		{
+			"name": "page-fullwidth-notitle",
+			"title": "Page: Fullwidth / No title",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "page-fullwidth",
+			"title": "Page: Fullwidth",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "page-notitle",
+			"title": "Page: No title",
+			"postTypes": [
+				"page"
+			]
+		}
+	],
 	"templateParts": [
 		{
 			"name": "header",
+			"title": "Header",
 			"area": "header"
 		},
 		{
 			"name": "footer",
+			"title": "Footer",
 			"area": "footer"
 		},
 		{
 			"name": "query",
+			"title": "Query (The Loop)",
 			"area": "query"
 		}
 	],
@@ -288,7 +322,7 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "0"
+			"blockGap": "1.5rem"
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--sans-serif)",
