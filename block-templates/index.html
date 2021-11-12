@@ -1,10 +1,14 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main"} -->
+<!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
 <main class="wp-block-group">
-	<!-- wp:heading {"level":1,"align":"wide"} -->
-		<h1 class="alignwide">Blog</h1>
-	<!-- /wp:heading -->
+	<!-- wp:group {"align":"wide"} -->
+	<div class="wp-block-group alignwide">
+		<!-- wp:heading {"level":1,"className":"wp-block-post-title"} -->
+		<h1 class="wp-block-post-title">Blog</h1>
+		<!-- /wp:heading -->
+	</div>
+	<!-- /wp:group -->
 
 	<!-- wp:template-part {"slug":"query","layout":{"inherit":true}} /-->
 </main>
