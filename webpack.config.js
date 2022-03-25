@@ -9,7 +9,7 @@ module.exports = {
 		'./main.js',
 	],
 	output: {
-		path: path.resolve( __dirname, 'assets/js' ),
+		path: path.resolve( __dirname, 'assets/dist' ),
 		filename: '[name].bundle.js',
 	},
 	//devtool: 'source-map',
