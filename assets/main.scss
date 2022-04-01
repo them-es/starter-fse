@@ -133,6 +133,7 @@ main {
 
 	.wp-block-post-content {
 		.alignfull {
+			width: auto;
 			margin-left: calc( #{$spacing-horizontal} * -1 ) !important;
 			margin-right: calc( #{$spacing-horizontal} * -1 ) !important;
 			padding-left: $spacing-horizontal;
