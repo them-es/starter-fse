@@ -5,7 +5,7 @@
 if ( ! function_exists( 'themes_starter_theme_support' ) ) {
 	function themes_starter_theme_support() {
 		// Make theme available for translation: Translations can be filed in the /languages/ directory.
-		load_theme_textdomain( 'my-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'my-theme', __DIR__ . '/languages' );
 
 		// Add support for post thumbnails.
 		add_theme_support( 'post-thumbnails' );
@@ -53,14 +53,14 @@ if ( ! function_exists( 'themes_starter_load_scripts' ) ) {
 
 		// 1. Styles.
 		wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $theme_version );
-		wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/dist/main.css', array(), $theme_version, 'all' ); // main.scss: Compiled custom styles.
+		wp_enqueue_style( 'main', get_theme_file_uri( 'assets/dist/main.css' ), array(), $theme_version, 'all' ); // main.scss: Compiled custom styles.
 
 		if ( is_rtl() ) {
-			wp_enqueue_style( 'rtl', get_template_directory_uri() . '/assets/dist/rtl.css', array(), $theme_version, 'all' );
+			wp_enqueue_style( 'rtl', get_theme_file_uri( 'assets/dist/rtl.css' ), array(), $theme_version, 'all' );
 		}
 
 		// 2. Scripts.
-		wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/dist/main.bundle.js', array(), $theme_version, true );
+		wp_enqueue_script( 'mainjs', get_theme_file_uri( 'assets/dist/main.bundle.js' ), array(), $theme_version, true );
 	}
 	add_action( 'wp_enqueue_scripts', 'themes_starter_load_scripts' );
 }

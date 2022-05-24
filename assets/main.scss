@@ -39,6 +39,7 @@ input[type="text"],
 input[type="password"],
 input[type="url"],
 input[type="email"],
+input[type="tel"],
 input[type="number"],
 input[type="search"] {
 	display: flex;
@@ -48,7 +49,7 @@ input[type="search"] {
 
 h1,
 .h1 {
-	font-size: var(--wp--preset--font-size--gigantic);
+	font-size: var(--wp--custom--typography--font-size--colossal);
 	line-height: var(--wp--custom--typography--line-height--page-title);
 }
 
@@ -66,7 +67,7 @@ body {
 			margin-bottom: calc( #{$spacing-vertical} * 3 );
 
 			.wp-block-post-author__avatar {
-				margin-right: calc( #{$spacing-vertical} * 2 );
+				margin-right: calc( #{$spacing-horizontal} * 2 );
 
 				.avatar {
 					width: 180px;
@@ -356,6 +357,7 @@ ul.wp-block-post-template {
 	input[type="password"],
 	input[type="url"],
 	input[type="email"],
+	input[type="tel"],
 	input[type="number"],
 	input[type="search"] {
 		width: 100%;
@@ -367,6 +369,7 @@ ul.wp-block-post-template {
 	input[type="password"],
 	input[type="url"],
 	input[type="email"],
+	input[type="tel"],
 	input[type="number"],
 	input[type="search"],
 	[type="submit"],
