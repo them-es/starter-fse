@@ -75,40 +75,69 @@
 			"link": true,
 			"palette": [
 				{
+					"name": "Black",
 					"slug": "black",
 					"color": "#000000"
 				},
 				{
+					"name": "Dark-Gray",
 					"slug": "dark-gray",
 					"color": "#212529"
 				},
 				{
+					"name": "Gray",
 					"slug": "gray",
 					"color": "#ABB8C3"
 				},
 				{
+					"name": "Charcoal",
 					"slug": "charcoal",
 					"color": "#264653"
 				},
 				{
+					"name": "Green",
 					"slug": "green",
 					"color": "#2A9D8F"
 				},
 				{
+					"name": "Yellow",
 					"slug": "yellow",
 					"color": "#E9C46A"
 				},
 				{
+					"name": "Orange",
 					"slug": "orange",
 					"color": "#F4A261"
 				},
 				{
+					"name": "Red",
 					"slug": "red",
 					"color": "#E76F51"
 				},
 				{
+					"name": "White",
 					"slug": "white",
 					"color": "#FFFFFF"
+				},
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "var(--wp--preset--color--black)"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "var(--wp--preset--color--dark-gray)"
+				},
+				{
+					"name": "Foreground",
+					"slug": "foreground",
+					"color": "var(--wp--preset--color--black)"
+				},
+				{
+					"name": "Background",
+					"slug": "background",
+					"color": "var(--wp--preset--color--white)"
 				}
 			]
 		},
