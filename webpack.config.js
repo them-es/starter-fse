@@ -14,6 +14,30 @@ module.exports = {
 		filename: '[name].bundle.js',
 	},
 	watch: true,
+	// $ webpack serve
+	/*devServer: {
+		static: {
+			directory: path.join( __dirname, 'assets' ),
+		},
+		open: true,
+		compress: true,
+		devMiddleware: {
+			writeToDisk: true,
+		},
+		client: {
+			overlay: false,
+		},
+		host: new URL( localHost ).hostname,
+		proxy: {
+			'*': {
+				target: localHost,
+				changeOrigin: true,
+				rewrite: function ( path, req ) {
+					return path.replace( /\/(.*?)/g, '' );
+				},
+			},
+		},
+	},*/
 	module: {
 		rules: [
 			{
