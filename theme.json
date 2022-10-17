@@ -254,12 +254,12 @@
 			"core/site-tagline": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)",
-					"lineHeight": 1.4
+					"lineHeight": "1.4"
 				}
 			},
 			"core/button": {
 				"border": {
-					"border": "1px",
+					"width": "1px",
 					"radius": "0px"
 				},
 				"color": {
@@ -273,7 +273,7 @@
 			},
 			"core/search": {
 				"border": {
-					"border": "1px",
+					"width": "1px",
 					"radius": "0px"
 				},
 				"color": {

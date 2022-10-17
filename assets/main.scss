@@ -1,6 +1,5 @@
 // Compile "main.scss" as "dist/main.css"
 
-
 /**
  * Add custom styles
  *
@@ -25,6 +24,14 @@ $red:      var(--wp--preset--color--red) !default;
 $spacing-vertical:   var(--wp--preset--spacing--3, 1rem) !default;
 $spacing-horizontal: var(--wp--preset--spacing--4, 1.5rem) !default;
 
+// Responsive breakpoints
+$media-max-width-sm: 599px; // var(--wp--custom--media-max-width--sm);
+$media-max-width-lg: 999px; // var(--wp--custom--media-max-width--lg);
+
+:root {
+	--custom--media-max-width--sm: #{$media-max-width-sm};
+	--custom--media-max-width--lg: #{$media-max-width-lg};
+}
 
 /**
  * General
@@ -101,6 +108,8 @@ body {
 header {
 	&.site-header {
 		.wp-block-search {
+			padding: 0;
+
 			.wp-block-search__inside-wrapper {
 				max-width: 300px;
 			}
@@ -350,7 +359,7 @@ ul.wp-block-post-template {
  * /wp-includes/css/dist/block-library/style.css
  */
 
-@media (max-width: 999px) {
+@media (max-width: $media-max-width-lg) {
 	input[type="text"],
 	input[type="password"],
 	input[type="url"],
@@ -362,14 +371,7 @@ ul.wp-block-post-template {
 	}
 }
 
-@media (max-width: 599px) {
-	input[type="text"],
-	input[type="password"],
-	input[type="url"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="number"],
-	input[type="search"],
+@media (max-width: $media-max-width-sm) {
 	[type="submit"],
 	#submit {
 		width: 100%;
