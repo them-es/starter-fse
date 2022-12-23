@@ -1,22 +1,26 @@
 <?php
-/**
- * Theme Setup.
- */
 if ( ! function_exists( 'themes_starter_theme_support' ) ) {
+	/**
+	 * General Theme Settings.
+	 *
+	 * @since v1.0
+	 *
+	 * @return void
+	 */
 	function themes_starter_theme_support() {
 		// Make theme available for translation: Translations can be filed in the /languages/ directory.
 		load_theme_textdomain( 'my-theme', __DIR__ . '/languages' );
 
-		// Add support for post thumbnails.
+		// Add support for Post thumbnails.
 		add_theme_support( 'post-thumbnails' );
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
-		// Add support for block styles.
+		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
 
-		// Add support for editor styles.
+		// Add support for Editor Styles.
 		add_theme_support( 'editor-styles' );
-		// Enqueue editor styles.
+		// Enqueue Editor Styles.
 		add_editor_style( 'style-editor.css' );
 	}
 	add_action( 'after_setup_theme', 'themes_starter_theme_support' );
@@ -28,6 +32,10 @@ if ( ! function_exists( 'themes_starter_theme_support' ) ) {
 
 /**
  * Custom Template part.
+ *
+ * @param array $areas Template part areas.
+ *
+ * @return array
  */
 function themes_starter_custom_template_part_area( $areas ) {
 	array_push(
@@ -40,14 +48,17 @@ function themes_starter_custom_template_part_area( $areas ) {
 			'area_tag'    => 'div',
 		)
 	);
+
 	return $areas;
 }
 add_filter( 'default_wp_template_part_areas', 'themes_starter_custom_template_part_area' );
 
-/**
- * Enqueue frontend assets.
- */
 if ( ! function_exists( 'themes_starter_load_scripts' ) ) {
+	/**
+	 * Enqueue CSS Stylesheets and Javascript files.
+	 *
+	 * @return void
+	 */
 	function themes_starter_load_scripts() {
 		$theme_version = wp_get_theme()->get( 'Version' );
 

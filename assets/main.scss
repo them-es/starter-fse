@@ -365,13 +365,11 @@ ul.wp-block-post-template {
 		&.site-header {
 			.wp-block-navigation {
 				.wp-block-navigation__container {
-					margin: 0;
 					width: 100%;
-					align-items: center !important;
 				}
 
 				.wp-block-search {
-					margin: 0 auto;
+					order: -1;
 				}
 			}
 		}
