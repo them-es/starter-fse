@@ -65,9 +65,6 @@ h1,
  */
 
 body {
-	margin: 0;
-	padding: $spacing-vertical $spacing-horizontal;
-
 	&.author {
 		.wp-block-post-author {
 			align-items: center;
@@ -107,6 +104,8 @@ body {
 
 header {
 	&.site-header {
+		padding: 0 $spacing-horizontal;
+
 		.wp-block-search {
 			max-width: 290px;
 
@@ -127,16 +126,6 @@ main {
 			padding: 0;
 		}
 	}
-
-	.wp-block-post-content {
-		.alignfull {
-			width: auto;
-			margin-left: calc( #{$spacing-horizontal} * -1 ) !important;
-			margin-right: calc( #{$spacing-horizontal} * -1 ) !important;
-			padding-left: $spacing-horizontal;
-			padding-right: $spacing-horizontal;
-		}
-	}
 }
 
 
@@ -145,6 +134,7 @@ main {
 footer {
 	&.site-footer {
 		margin-top: calc( #{$spacing-vertical} * 3 );
+		padding: 0 $spacing-horizontal;
 	}
 }
 

@@ -1,9 +1,9 @@
 === them.es Starter FSE ===
 Contributors: them.es
 Tested up to: 6.1
-Stable tag: 1.1.2
+Stable tag: 1.1.4
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 them.es Starter Theme built for the new Full Site Editing experience.
 

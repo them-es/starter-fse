@@ -145,7 +145,7 @@
 		},
 		"layout": {
 			"contentSize": "650px",
-			"wideSize": "1000px"
+			"wideSize": "1200px"
 		},
 		"spacing": {
 			"spacingScale": {
@@ -230,6 +230,7 @@
 				}
 			]
 		},
+		"useRootPaddingAwareAlignments": true,
 		"custom": {
 			"typography": {
 				"line-height": {

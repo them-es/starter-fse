@@ -1,16 +1,12 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
 <main class="wp-block-group">
-	<!-- wp:group {"align":"wide"} -->
-	<div class="wp-block-group alignwide">
-		<!-- wp:heading {"level":1,"className":"wp-block-post-title"} -->
-		<h1 class="wp-block-post-title">Search</h1>
-		<!-- /wp:heading -->
-	</div>
-	<!-- /wp:group -->
+	<!-- wp:heading {"level":1,"align":"wide","className":"wp-block-post-title"} -->
+	<h1 class="wp-block-post-title alignwide">Search</h1>
+	<!-- /wp:heading -->
 
-	<!-- wp:template-part {"slug":"query","layout":{"inherit":true}} /-->
+	<!-- wp:template-part {"slug":"query"} /-->
 </main>
 <!-- /wp:group -->
 
