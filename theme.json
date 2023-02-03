@@ -11,20 +11,6 @@
 			]
 		},
 		{
-			"name": "page-fullwidth-notitle",
-			"title": "Page: Fullwidth / No title",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "page-fullwidth",
-			"title": "Page: Fullwidth",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
 			"name": "page-notitle",
 			"title": "Page: No title",
 			"postTypes": [
@@ -153,34 +139,34 @@
 			},
 			"spacingSizes": [
 				{
-					"size": "0",
-					"slug": "0",
-					"name": "0"
-				},
-				{
-					"size": "0.25rem",
-					"slug": "1",
+					"size": "1rem",
+					"slug": "30",
 					"name": "1"
 				},
 				{
-					"size": "0.5rem",
-					"slug": "2",
+					"size": "1.5rem",
+					"slug": "40",
 					"name": "2"
 				},
 				{
-					"size": "1rem",
-					"slug": "3",
+					"size": "1.75rem",
+					"slug": "50",
 					"name": "3"
 				},
 				{
-					"size": "1.5rem",
-					"slug": "4",
+					"size": "2rem",
+					"slug": "60",
 					"name": "4"
 				},
 				{
 					"size": "3rem",
-					"slug": "5",
+					"slug": "70",
 					"name": "5"
+				},
+				{
+					"size": "5rem",
+					"slug": "80",
+					"name": "6"
 				}
 			],
 			"units": [
@@ -282,10 +268,10 @@
 				},
 				"spacing": {
 					"padding": {
-						"top": "var(--wp--preset--spacing--1)",
-						"bottom": "var(--wp--preset--spacing--1)",
-						"left": "var(--wp--preset--spacing--1)",
-						"right": "var(--wp--preset--spacing--1)"
+						"top": "var(--wp--preset--spacing--20)",
+						"bottom": "var(--wp--preset--spacing--20)",
+						"left": "var(--wp--preset--spacing--20)",
+						"right": "var(--wp--preset--spacing--20)"
 					}
 				}
 			},
@@ -317,10 +303,10 @@
 			"core/code": {
 				"spacing": {
 					"padding": {
-						"top": "var(--wp--preset--spacing--3)",
-						"bottom": "var(--wp--preset--spacing--3)",
-						"left": "var(--wp--preset--spacing--3)",
-						"right": "var(--wp--preset--spacing--3)"
+						"top": "var(--wp--preset--spacing--30)",
+						"bottom": "var(--wp--preset--spacing--30)",
+						"left": "var(--wp--preset--spacing--30)",
+						"right": "var(--wp--preset--spacing--30)"
 					}
 				},
 				"border": {
@@ -387,10 +373,10 @@
 		"spacing": {
 			"blockGap": "1.5rem",
 			"padding": {
-				"top": "var(--wp--preset--spacing--3)",
-				"right": "var(--wp--preset--spacing--4)",
-				"bottom": "var(--wp--preset--spacing--3)",
-				"left": "var(--wp--preset--spacing--4)"
+				"top": "var(--wp--preset--spacing--30)",
+				"right": "var(--wp--preset--spacing--40)",
+				"bottom": "var(--wp--preset--spacing--30)",
+				"left": "var(--wp--preset--spacing--40)"
 			}
 		},
 		"typography": {
