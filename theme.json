@@ -108,6 +108,11 @@
 					"color": "#FFFFFF"
 				},
 				{
+					"name": "Base",
+					"slug": "base",
+					"color": "var(--wp--preset--color--white)"
+				},
+				{
 					"name": "Primary",
 					"slug": "primary",
 					"color": "var(--wp--preset--color--black)"
@@ -224,7 +229,7 @@
 					"heading": 1.3,
 					"page-title": 1.1
 				},
-				"font-weight":{
+				"font-weight": {
 					"light": "300",
 					"normal": "400"
 				},
@@ -242,20 +247,6 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)",
 					"lineHeight": "1.4"
-				}
-			},
-			"core/button": {
-				"border": {
-					"width": "1px",
-					"radius": "0px"
-				},
-				"color": {
-					"background": "var(--wp--preset--color--dark-gray)",
-					"text": "var(--wp--preset--color--white)"
-				},
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)",
-					"fontWeight": "var(--wp--custom--typography--font-weight--normal)"
 				}
 			},
 			"core/search": {
@@ -322,6 +313,44 @@
 			"text": "var(--wp--preset--color--dark-gray)"
 		},
 		"elements": {
+			"button": {
+				"border": {
+					"width": "1px",
+					"radius": "0px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--dark-gray)",
+					"text": "var(--wp--preset--color--white)"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "var(--wp--custom--typography--font-weight--normal)"
+				},
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--gray)",
+						"text": "var(--wp--preset--color--white)"
+					}
+				},
+				":focus": {
+					"color": {
+						"background": "var(--wp--preset--color--gray)",
+						"text": "var(--wp--preset--color--white)"
+					}
+				},
+				":active": {
+					"color": {
+						"background": "var(--wp--preset--color--gray)",
+						"text": "var(--wp--preset--color--white)"
+					}
+				},
+				":visited": {
+					"color": {
+						"background": "var(--wp--preset--color--gray)",
+						"text": "var(--wp--preset--color--white)"
+					}
+				}
+			},
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--dark-gray)"
