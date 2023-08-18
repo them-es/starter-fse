@@ -20,7 +20,11 @@ This Theme comes with a built in webpack task automation. Sass files will be com
 - `$ npm install`
 - Run the **`watch`** script
 - `$ npm run watch`
-- Modify `/theme.json` (Global FSE settings for the block editor and CSS variables), `/assets/main.scss` and `/assets/main.js`
+- Modify `/theme.json` (Global settings for the block editor including the CSS variables), `/assets/main.scss` and `/assets/main.js`
+
+* Test the Theme
+* Run the **`build`** script
+* `$ npm run build`
 
 ## (Optional) Include blocks in the theme
 
@@ -32,6 +36,7 @@ This Theme comes with a built in webpack task automation. Sass files will be com
 
 - [Sass](https://github.com/sass/sass), [MIT license](https://github.com/sass/sass/blob/stable/MIT-LICENSE)
 - [webpack](https://github.com/webpack/webpack), [MIT license](https://github.com/webpack/webpack/blob/master/LICENSE)
+- [@wordpress/scripts](https://github.com/WordPress/gutenberg/tree/trunk/packages/scripts), [GPLv2+ and Mozilla Public License v2.0](https://github.com/WordPress/gutenberg/blob/trunk/LICENSE.md)
 
 ## Copyright & License
 

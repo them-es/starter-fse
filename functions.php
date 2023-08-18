@@ -21,7 +21,9 @@ if ( ! function_exists( 'themes_starter_theme_support' ) ) {
 		// Add support for Editor Styles.
 		add_theme_support( 'editor-styles' );
 		// Enqueue Editor Styles.
-		add_editor_style( 'style-editor.css' );
+		add_editor_style(
+			'style-editor.css'
+		);
 	}
 	add_action( 'after_setup_theme', 'themes_starter_theme_support' );
 
@@ -64,14 +66,15 @@ if ( ! function_exists( 'themes_starter_load_scripts' ) ) {
 
 		// 1. Styles.
 		wp_enqueue_style( 'style', get_stylesheet_uri(), array(), $theme_version );
-		wp_enqueue_style( 'main', get_theme_file_uri( 'assets/dist/main.css' ), array(), $theme_version, 'all' ); // main.scss: Compiled custom styles.
+		wp_enqueue_style( 'main', get_theme_file_uri( 'build/main.css' ), array(), $theme_version, 'all' ); // main.scss: Compiled custom styles.
 
 		if ( is_rtl() ) {
-			wp_enqueue_style( 'rtl', get_theme_file_uri( 'assets/dist/rtl.css' ), array(), $theme_version, 'all' );
+			wp_enqueue_style( 'rtl', get_theme_file_uri( 'build/rtl.css' ), array(), $theme_version, 'all' );
 		}
 
 		// 2. Scripts.
-		wp_enqueue_script( 'mainjs', get_theme_file_uri( 'assets/dist/main.bundle.js' ), array(), $theme_version, true );
+		wp_enqueue_script( 'mainjs', get_theme_file_uri( 'build/main.js' ), array(), $theme_version, true );
 	}
 	add_action( 'wp_enqueue_scripts', 'themes_starter_load_scripts' );
 }
+
