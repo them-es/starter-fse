@@ -27,6 +27,21 @@ if ( ! function_exists( 'themes_starter_theme_support' ) ) {
 	}
 	add_action( 'after_setup_theme', 'themes_starter_theme_support' );
 
+	/**
+	 * Enqueue editor stylesheet (for iframed Post Editor):
+	 * https://make.wordpress.org/core/2023/07/18/miscellaneous-editor-changes-in-wordpress-6-3/#post-editor-iframed
+	 *
+	 * @since v1.2.2
+	 *
+	 * @return void
+	 */
+	function themes_starter_load_editor_styles() {
+		if ( is_admin() ) {
+			wp_enqueue_style( 'editor-style', get_theme_file_uri( 'style-editor.css' ) );
+		}
+	}
+	add_action( 'enqueue_block_assets', 'themes_starter_load_editor_styles' );
+
 	// Disable Block Directory: https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/filters/editor-filters.md#block-directory
 	remove_action( 'enqueue_block_editor_assets', 'wp_enqueue_editor_block_directory_assets' );
 	remove_action( 'enqueue_block_editor_assets', 'gutenberg_enqueue_block_editor_assets_block_directory' );
@@ -77,4 +92,3 @@ if ( ! function_exists( 'themes_starter_load_scripts' ) ) {
 	}
 	add_action( 'wp_enqueue_scripts', 'themes_starter_load_scripts' );
 }
-

@@ -5,17 +5,12 @@
 		{
 			"name": "blank",
 			"title": "Blank",
-			"postTypes": [
-				"page",
-				"post"
-			]
+			"postTypes": ["page", "post"]
 		},
 		{
 			"name": "page-notitle",
 			"title": "Page: No title",
-			"postTypes": [
-				"page"
-			]
+			"postTypes": ["page"]
 		}
 	],
 	"templateParts": [
@@ -174,14 +169,7 @@
 					"name": "6"
 				}
 			],
-			"units": [
-				"%",
-				"px",
-				"em",
-				"rem",
-				"vh",
-				"vw"
-			]
+			"units": ["%", "px", "em", "rem", "vh", "vw"]
 		},
 		"typography": {
 			"lineHeight": true,
@@ -316,6 +304,8 @@
 			"button": {
 				"border": {
 					"width": "1px",
+					"color": "transparent",
+					"style": "solid",
 					"radius": "0px"
 				},
 				"color": {
