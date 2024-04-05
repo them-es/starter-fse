@@ -14,6 +14,7 @@ module.exports = {
 			client: {
 				overlay: false,
 			},
+			// open: ["http://localhost"], // (Optional) Add your local domain here
 			hot: false,
 			compress: true,
 			devMiddleware: {
