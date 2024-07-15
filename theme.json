@@ -1,6 +1,6 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"version": 2,
+	"version": 3,
 	"customTemplates": [
 		{
 			"name": "blank",
@@ -25,7 +25,7 @@
 			"title": "Footer"
 		},
 		{
-			"area": "query",
+			"area": "uncategorized",
 			"name": "query",
 			"title": "Query (The Loop)"
 		}
@@ -344,6 +344,9 @@
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--dark-gray)"
+				},
+				"typography": {
+					"textDecoration": "none"
 				}
 			},
 			"h1": {
