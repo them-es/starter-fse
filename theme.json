@@ -134,39 +134,37 @@
 			"wideSize": "1200px"
 		},
 		"spacing": {
-			"spacingScale": {
-				"steps": 0
-			},
+			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
+					"name": "1",
 					"size": "1rem",
-					"slug": "30",
-					"name": "1"
+					"slug": "30"
 				},
 				{
+					"name": "2",
 					"size": "1.5rem",
-					"slug": "40",
-					"name": "2"
+					"slug": "40"
 				},
 				{
+					"name": "3",
 					"size": "1.75rem",
-					"slug": "50",
-					"name": "3"
+					"slug": "50"
 				},
 				{
+					"name": "4",
 					"size": "2rem",
-					"slug": "60",
-					"name": "4"
+					"slug": "60"
 				},
 				{
+					"name": "5",
 					"size": "3rem",
-					"slug": "70",
-					"name": "5"
+					"slug": "70"
 				},
 				{
+					"name": "6",
 					"size": "5rem",
-					"slug": "80",
-					"name": "6"
+					"slug": "80"
 				}
 			],
 			"units": ["%", "px", "em", "rem", "vh", "vw"]
