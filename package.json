@@ -13,9 +13,6 @@
 		"watch": "webpack serve && wp-scripts start",
 		"build": "wp-scripts build"
 	},
-	"browserslist": [
-		"last 2 versions"
-	],
 	"dependencies": {},
 	"devDependencies": {
 		"@wordpress/scripts": "^27.7.0",

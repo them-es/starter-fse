@@ -108,6 +108,11 @@
 					"color": "var(--wp--preset--color--white)"
 				},
 				{
+					"name": "Contrast",
+					"slug": "contrast",
+					"color": "var(--wp--preset--color--dark-gray)"
+				},
+				{
 					"name": "Primary",
 					"slug": "primary",
 					"color": "var(--wp--preset--color--black)"
