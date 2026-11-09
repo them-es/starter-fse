@@ -15,8 +15,8 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@wordpress/scripts": "^27.7.0",
+		"@wordpress/scripts": "^37.1.0",
 		"path": "^0.12.7",
-		"webpack-remove-empty-scripts": "^1.0.4"
+		"webpack-remove-empty-scripts": "^1.1.1"
 	}
 }
